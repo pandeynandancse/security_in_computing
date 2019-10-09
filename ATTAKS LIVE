@@ -14,4 +14,6 @@ ALL AT ONE PLACE   ------->>>>>>     https://norse-corp.com/map/
 
 
 2) TWO TOOLS ---->> WIRESHARK - PACKET ANALYZER SOFTWARE
-                    SCAPY     - 
+                    SCAPY     - sudo apt-get update
+                                sudo apt-get install python-scapy
+
