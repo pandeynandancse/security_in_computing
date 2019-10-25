@@ -1,0 +1,4 @@
+whois ipaddress
+whois netflix.com
+host netflix.com
+dig -mx netflix.com
