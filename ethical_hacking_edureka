@@ -2,3 +2,41 @@ whois ipaddress
 whois netflix.com
 host netflix.com
 dig -mx netflix.com
+
+
+
+
+
+
+
+
+openssl genrsa -des3 -out private.key 4096
+ 2016  ls
+ 2017  openssl  rsa -in private.key -pubout -out public.key 
+ 2018  ls
+ 2019  openssl  rsautil -encrypt -pubin -inkey public.key -in rsaalgo.txt -out encryptedrsaalgo.txt
+ 2020  openssl  rsautl -encrypt -pubin -inkey public.key -in rsaalgo.txt -out encryptedrsaalgo.txt
+ 2021  ls
+ 2022  cat  encryptedrsaalgo.txt
+ 2023  openssl  rsautl -decrypt  -inkey private.key -in encryptedrsaalgo.txt -out decryptedencryptedrsaalgo.txt
+ 2024  ls
+ 2025  cat decryptedencryptedrsaalgo.txt
+ 2026  clear
+ 2027  openssl genrsa -des3 -out -ca.key 4096
+ 2028  openssl req -new -x509 -days 365 -key -ca.key -out -creating.crt
+ 2029  ls
+ 2030  cat -creating.crt
+ 2031  cat creating.crt
+ 2032  cat  -creating.crt
+ 2033  cat  '-creating.crt'
+ 2034  md5sum -creating.crt
+ 2035  cat  creating.crt
+ 2036  md5sum creating.crt
+ 2037  sslscan www.edureka.co
+ 2038  sudo apt install sslscan
+ 2039  sslscan www.edureka.co
+ 2040  git clone https://github.com/LionSec/katoolin.git && cp katoolin/katoolin.py /usr/bin/katoolin
+ 2041  chmod +x /usr/bin/katoolin
+ 2042  sudp chmod +x /usr/bin/katoolin
+ 2043  sudo chmod +x /usr/bin/katoolin
+ 2044  sudo katoolin
