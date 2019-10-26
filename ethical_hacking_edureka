@@ -35,8 +35,109 @@ openssl genrsa -des3 -out private.key 4096
  2037  sslscan www.edureka.co
  2038  sudo apt install sslscan
  2039  sslscan www.edureka.co
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ /*
+ run kali tools on any linux distribution such as ubuntu or parrot using katoolin
  2040  git clone https://github.com/LionSec/katoolin.git && cp katoolin/katoolin.py /usr/bin/katoolin
  2041  chmod +x /usr/bin/katoolin
  2042  sudp chmod +x /usr/bin/katoolin
  2043  sudo chmod +x /usr/bin/katoolin
  2044  sudo katoolin
+*/
+
+
+
+
+
+
+
+
+
+/* 
+nano cmds.txt ---- opens empty file in nano
+enter content in file
+now ctrl + o to write out
+now check saving file name press 'enter'
+press ctrl + x
+your file named as cmds.txt is saved. 
+*/
+
+
+
+
+
+
+
+
+
+
+
+/*
+ls -l ---list all files and folders
+ls -la  ---- list all hidden files and foldeers also.
+less abc.txt ---- see file in new window 
+cat abc.txt | grep hello ---- it means pipelining two commands cat and grep ------ show abc.txt and extract those lines only which consists hello and show only thos e lines
+echo "ab" > abc.txt ----- writes ab in abc.txt
+
+chmod +x abc.sh  ----- make abc.sh file executable
+./abc.sh
+
+sudo su -        ----- from awadhi123@ to root@ 
+
+
+
+/ -> home/ -> awadhi123/ i.e. ~
+
+
+
+------------------------------------
+/*
+operations under awadhi123@----
+sudo useradd username
+sudo groupadd groupname
+sudo chown username:groupname abc.txt
+*/
+
+
+
+
+
+
+
+
+/*
+operation under root@ that is obtained by applying sudo su - on awadhi123@
+
+useradd username
+groupadd groupname
+chown username:groupname abc.txt
+*/
+
+
+
+
+
+/* chmod 
+
+sudo chmod u+rwx g-x o+rw filename     ------------ it means give user read write execute permission , remove execute permisssion from group  and give read and write permission to other.
+*/
+
+
+
+
+
+
+
+Become anonymous in kali linux
+
+
+
+*/
+
+
